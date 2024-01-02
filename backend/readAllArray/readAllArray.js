@@ -3,8 +3,6 @@
 //@param {String} idBaseDeDatos: es el identificador de la base de datos
 // function readAll(nombreTabla,idBaseDeDatos){
 function readAllArray(argumentos) {
-
-  console.log(argumentos);
   try {
     let [nombreTabla, idBaseDeDatos] = argumentos;
 

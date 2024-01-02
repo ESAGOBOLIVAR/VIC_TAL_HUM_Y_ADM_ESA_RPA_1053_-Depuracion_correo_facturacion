@@ -15,7 +15,7 @@ function parametrosGlobales() {
     //nombre de las tablas utilizar
     nameTables: {
       tablaEjecucion: "Ejecucion",
-      tablaConsolidadoReporteFacturacion: "Consolidado reporte facturacion"
+      tablaConsolidadoReporteFacturacion: "Consolidado reporte facturacion" //tabla donde estara el consolidado final
       // tablaBasesConFiltrosAplicados: "Bases Con Filtros Aplicados",
       // tablaBasesSinAplicarFiltros: "Bases Sin Aplicar Filtros",
       // tablaParametrizacion: "Parametrizacion",

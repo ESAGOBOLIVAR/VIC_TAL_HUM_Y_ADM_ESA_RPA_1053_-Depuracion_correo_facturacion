@@ -40,8 +40,11 @@ function triggerVerificacionDeUrlGoogleSheet() {
                 //buscar Consolidado Depuración correo facturación si el numero de la factura existe
                 let busqueda = dataSheetConsolidadoReporteFacturacion.find(registro => registro[4].toString().trim() == numero_factura);
 
-                //si no lo encuentra busqueda es igual a undefine por lo tanto lo va a insertar
-                if (busqueda == undefined) {
+                //buscar en el arreglo antes de insertar
+                let busquedaEnArregloAInsertar = arregloRegistrosInsertar.find(registro => registro[4].toString().trim() == numero_factura);
+
+                //si no lo encuentra en la hoja de calculo del consolidado ni tampoco en el mismo proceso al insetar entonces lo va agregar
+                if (busqueda == undefined && busquedaEnArregloAInsertar == undefined) {
 
                     arregloRegistrosInsertar.push(el);
                 }
