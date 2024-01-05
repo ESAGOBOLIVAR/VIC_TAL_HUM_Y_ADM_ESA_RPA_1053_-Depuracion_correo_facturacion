@@ -1,10 +1,11 @@
 //funcion para consultar la bandeja de entrada y omitir aquellos correos que tienen la bandeja de GESTIONADO o NO GESTIONADO
 function consultarBandeja() {
 
-    let cantidadMensajes = 30; // Cantidad de mensajes a leer
+    let cantidadMensajes = 50; // Cantidad de mensajes a leer
 
     //consulta original descartar luego
-    let consultaGmail = `is:inbox after:2023/12/18 -in:trash -in:sent -is:forwarded -label:{"GESTIONADO","NO GESTIONADO"}`;
+    // let consultaGmail = `is:inbox after:2023/12/18 -in:trash -in:sent -is:forwarded -label:{"GESTIONADO","NO GESTIONADO"}`;
+    let consultaGmail = `-in:trash -in:sent -is:forwarded -label:{"GESTIONADO","NO GESTIONADO"}`;
 
     let bandeja = GmailApp.search(
         consultaGmail,

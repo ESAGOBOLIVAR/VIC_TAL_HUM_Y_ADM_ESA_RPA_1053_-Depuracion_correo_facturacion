@@ -7,7 +7,6 @@ function triggerLecturaBuzon() {
     const { tablaConsolidadoReporteFacturacion } = nameTables;
     const { idBaseDeDatosConsolidadoDepuracionCorreoFacturacion } = idDataBase
     //si el dia es miercoles
-    if (diaSemanaActual == "miercoles") {
 
         const bandeja = consultarBandeja();
 
@@ -88,5 +87,4 @@ function triggerLecturaBuzon() {
             }
 
         });
-    } //fin condicional dia
 } //fin del trigger
